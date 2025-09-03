@@ -7,6 +7,7 @@ const ConnectionString = process.env.MONGO_URL;
 
 async function connectToDatabase() {
   await mongoose.connect(ConnectionString);
+
   console.log("Connected to MongoDB");
 }
 
